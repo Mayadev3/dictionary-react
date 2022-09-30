@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #fbd5d5;
+}
+
+.App {
+  text-align: center;
+}
+
+.hiker-image {
+  height: 58vmin;
+}
+.App .header-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+h1 {
+  font-size: 67px;
+  margin-top: 30px;
+  font-family: "Roboto Slab", serif;
+  letter-spacing: 1px;
+  background-image: linear-gradient(
+    97deg,
+    rgba(87, 51, 83, 1) 23%,
+    rgba(246, 91, 78, 1) 59%,
+    rgba(255, 186, 124, 1) 80%
+  );
+  background-size: 300% 300%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: gradient 1s linear infinite;
+  animation-direction: alternate;
+}
+@keyframes gradient {
+  0% {
+    background-position: 40% 30%;
+  }
+  100% {
+    background-position: 60% 50%;
+  }
+}
+input {
+  width: 330px;
+  padding: 10px 13px;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  margin-top: 5px;
+  color: #ff9d3d;
+}
+
+input::placeholder {
+  color: #f0dada;
+  font-size: 16px;
+}
+input:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+i.search-icon {
+  color: #f0dada;
+  font-size: 16px;
+  position: relative;
+  left: -33px;
+  top: 3px;
+}

@@ -4,12 +4,12 @@ export default function Dictionary() {
   let [keyWord, setKeyWord] = useState("null");
   function search(event) {
     event.preventDefault();
+    alert(`Searching for ${keyWord}`);
   }
 
   function handleKeywordChange(event) {
     event.preventDefault();
     setKeyWord(event.target.value);
-    console.log(keyWord);
   }
   return (
     <div className="Dictionary">

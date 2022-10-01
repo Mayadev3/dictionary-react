@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import axios from "axios";
-
 export default function Dictionary() {
   let [keyWord, setKeyWord] = useState("null");
 
@@ -11,7 +10,6 @@ export default function Dictionary() {
   function search(event) {
     //dictionary API source: https://dictionaryapi.dev/
     event.preventDefault();
-    alert(`Searching for ${keyWord}`);
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyWord}`;
     axios.get(apiUrl).then(handleResponse);
     console.log(apiUrl);

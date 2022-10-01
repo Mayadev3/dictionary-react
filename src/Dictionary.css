@@ -5,7 +5,7 @@
   letter-spacing: 1px;
   background-image: linear-gradient(
     97deg,
-    rgba(87, 51, 83, 1) 23%,
+    #5521b5 23%,
     rgba(246, 91, 78, 1) 59%,
     rgb(255, 160, 77) 80%
   );
@@ -35,14 +35,14 @@
 }
 
 .Dictionary input::placeholder {
-  color: #f0dada;
+  color: #f689c549;
   font-size: 16px;
 }
 .Dictionary input:focus::-webkit-input-placeholder {
   opacity: 0;
 }
 .Dictionary i.search-icon {
-  color: #f0dada;
+  color: #f689c549;
   font-size: 16px;
   position: relative;
   left: -33px;

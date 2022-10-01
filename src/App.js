@@ -15,15 +15,14 @@ export default function App() {
       <div className="text-audio">
         <p>
           <span className="label">
-            <strong>text</strong>
+            <strong>text: </strong>
           </span>{" "}
-          : "hə'ləʊ",
+          "hə'ləʊ",
         </p>
         <p>
           <span className="label">
-            <strong>audio</strong>
+            <strong>audio: </strong>
           </span>
-          :
           "//ssl.gstatic.com/dictionary/static/sounds/20200429/hello--_gb_1.mp3"
         </p>
       </div>

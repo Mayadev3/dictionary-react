@@ -4,7 +4,7 @@
   padding: 0;
 }
 body {
-  background-color: #fbd5d5;
+  background-color: #f8b4d9;
 }
 
 .App {
@@ -20,7 +20,7 @@ body {
   margin-top: 50px;
 }
 .label {
-  color: #d23daf;
+  color: #9061f9;
   font-family: "Times New Roman", Times, serif;
   font-size: 20px;
   text-transform: capitalize;
@@ -28,28 +28,31 @@ body {
 }
 
 .App .text-audio {
-  color: #ac94fa;
+  color: rgba(255, 0, 255);
   text-align: left;
   width: 65%;
   margin: 0 auto;
   font-size: 17px;
-  background-color: white;
+
   padding: 20px 80px;
   border-radius: 10px;
   position: relative;
+
+  /* From https://css.glass */
+  background: white;
+  box-shadow: 5px 5px 9px rgb(255, 0, 255, 0.2);
+  backdrop-filter: blur(4.6px);
+  -webkit-backdrop-filter: blur(4.6px);
 }
+
 .App .text-audio::before {
   content: "";
-  background-color: white;
-  width: 100px;
-  height: 20px;
+  background-color: #e8e8e8;
   position: absolute;
   width: 100%;
   height: 100%;
   border-radius: 10px;
   top: 0;
   left: 0;
-  bottom: 0;
-  right: 0;
-  opacity: 0.1;
+  opacity: 0.09;
 }

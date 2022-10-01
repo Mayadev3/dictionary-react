@@ -7,7 +7,7 @@
     97deg,
     rgba(87, 51, 83, 1) 23%,
     rgba(246, 91, 78, 1) 59%,
-    rgba(255, 186, 124, 1) 80%
+    rgb(255, 160, 77) 80%
   );
   background-size: 300% 300%;
   background-clip: text;
@@ -46,5 +46,4 @@
   font-size: 16px;
   position: relative;
   left: -33px;
-  top: 3px;
 }

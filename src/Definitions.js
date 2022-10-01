@@ -6,10 +6,17 @@ export default function Definitions(props) {
       {" "}
       <div className="text-audio">
         <p>
+          {" "}
           <span className="label">
-            <strong>text: </strong>
+            <strong>Word: </strong>
+          </span>
+          {props.wordSearched}
+        </p>
+        <p>
+          <span className="label">
+            <strong>Phonetics: </strong>
           </span>{" "}
-          "{props.text}",
+          {props.phonetics}
         </p>
         <p>
           <span className="label">

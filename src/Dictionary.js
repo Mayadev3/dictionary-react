@@ -8,7 +8,8 @@ export default function Dictionary() {
 
   function handleResponse(response) {
     setWord({
-      text: response.data[0].phonetics[0].text,
+      wordSearched: response.data[0].word,
+      phonetics: response.data[0].phonetics[0].text,
     });
   }
 
@@ -38,7 +39,11 @@ export default function Dictionary() {
           <i className="fa-solid fa-magnifying-glass search-icon"></i>
         </form>
       </div>
-      <Definitions text={word.text} audio={word.audioUrl} />
+      <Definitions
+        phonetics={word.phonetics}
+        audio={word.audioUrl}
+        wordSearched={word.wordSearched}
+      />
     </div>
   );
 }

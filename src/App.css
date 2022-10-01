@@ -5,19 +5,31 @@
 }
 body {
   background-color: #f8b4d9;
+  overflow: hidden;
 }
 
 .App {
   text-align: center;
 }
-
-.hiker-image {
-  height: 58vmin;
+.hiker-image,
+.moonman {
+  height: 57vmin;
+  margin-top: 30px;
 }
 .App .header-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   margin-top: 50px;
+}
+.hiker-image-container {
+  position: relative;
+  left: 100px;
+}
+.moonman {
+  position: relative;
+  right: 110px;
+  top: -20px;
+  transform: rotate(-10deg);
 }
 .label {
   color: #9061f9;
@@ -30,14 +42,12 @@ body {
 .App .text-audio {
   color: rgba(255, 0, 255);
   text-align: left;
-  width: 65%;
-  margin: 0 auto;
+  width: 63%;
+  margin: 20px auto;
   font-size: 17px;
-
   padding: 20px 80px;
   border-radius: 10px;
   position: relative;
-
   /* From https://css.glass */
   background: white;
   box-shadow: 5px 5px 9px rgb(255, 0, 255, 0.2);

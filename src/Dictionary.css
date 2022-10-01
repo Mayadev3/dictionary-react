@@ -1,6 +1,7 @@
 .Dictionary h1 {
-  font-size: 67px;
-  margin-top: 30px;
+  font-size: 63px;
+  margin-top: 60px;
+  margin-left: -40px;
   font-family: "Roboto Slab", serif;
   letter-spacing: 1px;
   background-image: linear-gradient(
@@ -25,13 +26,14 @@
   }
 }
 .Dictionary input {
-  width: 330px;
-  padding: 10px 13px;
+  width: 520px;
+  padding: 10px 30px;
   border-radius: 20px;
   outline: none;
   border: none;
   margin-top: 5px;
-  color: #ff9d3d;
+  margin-left: -20px;
+  color: rgba(255, 0, 255);
 }
 
 .Dictionary input::placeholder {

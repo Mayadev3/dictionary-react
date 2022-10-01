@@ -27,6 +27,7 @@
 }
 .Dictionary input {
   width: 520px;
+  min-width: 100%;
   padding: 10px 30px;
   border-radius: 20px;
   outline: none;

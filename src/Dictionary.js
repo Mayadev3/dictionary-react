@@ -1,10 +1,15 @@
 import React, { useState } from "react";
 import axios from "axios";
+import Definitions from "./Definitions.js";
+
 export default function Dictionary() {
   let [keyWord, setKeyWord] = useState("null");
+  let [word, setWord] = useState({});
 
   function handleResponse(response) {
-    console.log(response.data);
+    setWord({
+      text: response.data[0].phonetics[0].text,
+    });
   }
 
   function search(event) {
@@ -33,6 +38,7 @@ export default function Dictionary() {
           <i className="fa-solid fa-magnifying-glass search-icon"></i>
         </form>
       </div>
+      <Definitions text={word.text} audio={word.audioUrl} />
     </div>
   );
 }

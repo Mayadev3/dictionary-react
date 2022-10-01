@@ -16,20 +16,6 @@ export default function App() {
           <img src={moonman} className="moonman" alt="moonman" />
         </div>
       </div>
-      <div className="text-audio">
-        <p>
-          <span className="label">
-            <strong>text: </strong>
-          </span>{" "}
-          "hə'ləʊ",
-        </p>
-        <p>
-          <span className="label">
-            <strong>audio: </strong>
-          </span>
-          "//ssl.gstatic.com/dictionary/static/sounds/20200429/hello--_gb_1.mp3"
-        </p>
-      </div>
     </div>
   );
 }

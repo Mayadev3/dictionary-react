@@ -24,6 +24,13 @@ export default function Definitions(props) {
             <audio src={props.audio}></audio>
           </span>
         </p>
+
+        <p>
+          <span className="label">
+            <strong>Definition: </strong>
+          </span>{" "}
+          {props.meaning}
+        </p>
       </div>
     </div>
   );

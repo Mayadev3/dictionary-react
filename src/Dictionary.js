@@ -10,6 +10,7 @@ export default function Dictionary() {
     setWord({
       wordSearched: response.data[0].word,
       phonetics: response.data[0].phonetics[0].text,
+      meaning: response.data[0].meanings[0].definitions[0].definition,
     });
   }
 
@@ -40,9 +41,10 @@ export default function Dictionary() {
         </form>
       </div>
       <Definitions
+        wordSearched={word.wordSearched}
         phonetics={word.phonetics}
         audio={word.audioUrl}
-        wordSearched={word.wordSearched}
+        meaning={word.meaning}
       />
     </div>
   );

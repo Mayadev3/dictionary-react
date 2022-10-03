@@ -25,6 +25,7 @@ export default function Results(props) {
             <a
               href="https://github.com/Mayadev3/dictionary-react"
               target="_blank"
+              rel="noreferrer"
             >
               Github
             </a>
@@ -32,6 +33,7 @@ export default function Results(props) {
             <a
               href="https://transcendent-shortbread-f10f7b.netlify.app/"
               target="_blank"
+              rel="noreferrer"
             >
               Netlify
             </a>

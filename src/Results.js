@@ -18,10 +18,11 @@ export default function Results(props) {
   }
 }
 
-/* {props.results.meanings.map(function (meaning, index) {
+/* Mapping: {props.results.meanings.map(function (meaning, index) {
                 return meaning.definitions[0].definition;
               })}*/
-/*<div className="text-audio">
+
+/* HTML: <div className="text-audio">
         <p>
           {" "}
           <span className="label">

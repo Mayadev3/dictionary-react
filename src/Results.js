@@ -2,6 +2,7 @@ import React from "react";
 import Meaning from "./Meaning.js";
 import ReactAudioPlayer from "react-audio-player";
 export default function Results(props) {
+  console.log(props.results);
   if (props.results) {
     return (
       <div className="Results">
@@ -16,7 +17,6 @@ export default function Results(props) {
             src={props.results.phonetics[0].audio}
             autoPlay
             controls
-            className="mt-5"
           />
         </div>
         {props.results.meanings.map(function (meaning, index) {

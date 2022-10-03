@@ -39,7 +39,8 @@ body {
 }
 
 .section-1,
-.section-2 {
+.section-2,
+.section-3 {
   color: rgba(255, 0, 255);
   text-align: left;
   width: 700px;

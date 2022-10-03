@@ -1,0 +1,7 @@
+.synonyms {
+  display: flex;
+  flex-direction: row;
+}
+.example {
+  color: rgb(255, 160, 77);
+}

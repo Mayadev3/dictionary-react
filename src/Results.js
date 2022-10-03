@@ -5,20 +5,20 @@ export default function Results(props) {
     return (
       <div className="Results">
         <div className="section-1">
-          <span className="label">
-            <p>
+          <p>
+            <span className="label">
               <strong>{props.results.word}</strong>
-            </p>
-          </span>
+            </span>
+          </p>
           <p>{props.results.phonetic}</p>{" "}
-          {props.results.meanings.map(function (meaning, index) {
-            return (
-              <div key={index}>
-                <Meaning meaning={meaning} />
-              </div>
-            );
-          })}
         </div>
+        {props.results.meanings.map(function (meaning, index) {
+          return (
+            <div key={index}>
+              <Meaning meaning={meaning} />
+            </div>
+          );
+        })}
       </div>
     );
   } else {

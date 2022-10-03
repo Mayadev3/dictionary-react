@@ -1,0 +1,4 @@
+export default function Meaning(props) {
+  console.log(props.meaning);
+  return "Hello from meaning";
+}

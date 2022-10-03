@@ -1,17 +1,15 @@
 import React, { useState } from "react";
 import axios from "axios";
-import Definitions from "./Definitions.js";
+import Results from "./Results.js";
 
 export default function Dictionary() {
   let [keyWord, setKeyWord] = useState("null");
-  let [word, setWord] = useState({});
+  let [results, setResults] = useState("null");
 
   function handleResponse(response) {
-    setWord({
-      wordSearched: response.data[0].word,
-      phonetics: response.data[0].phonetics[0].text,
-      meaning: response.data[0].meanings[0].definitions[0].definition,
-    });
+    setResults(response.data[0]);
+
+    //meaning: response.data[0].meanings[0].definitions[0].definition,
   }
 
   function search(event) {
@@ -19,14 +17,12 @@ export default function Dictionary() {
     event.preventDefault();
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyWord}`;
     axios.get(apiUrl).then(handleResponse);
-    console.log(apiUrl);
   }
 
   function handleKeywordChange(event) {
     event.preventDefault();
     setKeyWord(event.target.value);
   }
-
   return (
     <div className="Dictionary">
       <div className="form-header-container">
@@ -40,12 +36,7 @@ export default function Dictionary() {
           <i className="fa-solid fa-magnifying-glass search-icon"></i>
         </form>
       </div>
-      <Definitions
-        wordSearched={word.wordSearched}
-        phonetics={word.phonetics}
-        audio={word.audioUrl}
-        meaning={word.meaning}
-      />
+      <Results results={results} />
     </div>
   );
 }

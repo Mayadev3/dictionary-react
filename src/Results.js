@@ -1,10 +1,27 @@
 import React from "react";
 
-export default function Definitions(props) {
-  return (
-    <div className="Definitions">
-      {" "}
-      <div className="text-audio">
+export default function Results(props) {
+  if (props.results) {
+    return (
+      <div className="Results">
+        <div className="text-audio">
+          <span className="label">
+            <p>
+              <strong>{props.results.word}</strong>
+            </p>
+          </span>
+        </div>
+      </div>
+    );
+  } else {
+    return null;
+  }
+}
+
+/* {props.results.meanings.map(function (meaning, index) {
+                return meaning.definitions[0].definition;
+              })}*/
+/*<div className="text-audio">
         <p>
           {" "}
           <span className="label">
@@ -31,7 +48,4 @@ export default function Definitions(props) {
           </span>{" "}
           {props.meaning}
         </p>
-      </div>
-    </div>
-  );
-}
+      </div>*/

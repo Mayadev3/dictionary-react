@@ -12,13 +12,12 @@ export default function Results(props) {
             </span>
           </p>
           <p>{props.results.phonetic}</p>{" "}
-          <p className="mt-5">
-            <ReactAudioPlayer
-              src={props.results.phonetics[0].audio}
-              autoPlay
-              controls
-            />
-          </p>
+          <ReactAudioPlayer
+            src={props.results.phonetics[0].audio}
+            autoPlay
+            controls
+            className="mt-5"
+          />
         </div>
         {props.results.meanings.map(function (meaning, index) {
           return (

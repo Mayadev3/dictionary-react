@@ -38,7 +38,8 @@ body {
   position: relative;
 }
 
-.text-audio {
+.section-1,
+.section-2 {
   color: rgba(255, 0, 255);
   text-align: left;
   width: 700px;

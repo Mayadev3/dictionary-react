@@ -1,5 +1,5 @@
 import React from "react";
-
+import Meaning from "./Meaning.js";
 export default function Results(props) {
   if (props.results) {
     return (
@@ -10,14 +10,22 @@ export default function Results(props) {
               <strong>{props.results.word}</strong>
             </p>
           </span>
-          <p>{props.results.phonetic}</p>
-          <p>
-            {" "}
-            {props.results.meanings.map(function (meaning, index) {
-              return meaning.definitions[0].definition;
-            })}
-          </p>
-          {props.results.phonetics.map(function (phonetic, index) {
+          <p>{props.results.phonetic}</p>{" "}
+          {props.results.meanings.map(function (meaning, index) {
+            return (
+              <div key={index}>
+                <Meaning meaning={meaning} />
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    );
+  } else {
+    return null;
+  }
+}
+/*   {props.results.phonetics.map(function (phonetic, index) {
             return phonetic.audio;
           })}
         </div>
@@ -34,10 +42,4 @@ export default function Results(props) {
           <p className="mt-2">
             {props.results.meanings[1].definitions[0].definition}
           </p>
-        </div>
-      </div>
-    );
-  } else {
-    return null;
-  }
-}
+        </div>*/

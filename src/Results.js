@@ -12,13 +12,9 @@ export default function Results(props) {
               <strong>{props.results.word}</strong>
             </span>
           </p>
-          <p>{props.results.phonetic}</p>{" "}
-          <ReactAudioPlayer
-            src={props.results.phonetics[0].audio}
-            autoPlay
-            controls
-          />
+          <p>{props.results.phonetic}</p>
         </div>
+
         {props.results.meanings.map(function (meaning, index) {
           return (
             <div key={index}>
@@ -52,3 +48,11 @@ export default function Results(props) {
     return null;
   }
 }
+/*  {props.results.phonetics.map(function (phonetic, index) {
+            return <div key={index}>{phonetic}</div>;
+          })}*/
+/* <ReactAudioPlayer
+            src={props.results.phonetics.audio}
+            autoPlay
+            controls
+          />*/

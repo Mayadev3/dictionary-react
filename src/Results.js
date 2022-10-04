@@ -1,8 +1,9 @@
 import React from "react";
 import Meaning from "./Meaning.js";
-//import ReactAudioPlayer from "react-audio-player";
+import ReactAudioPlayer from "react-audio-player";
 export default function Results(props) {
   console.log(props.results);
+
   if (props.results) {
     return (
       <div className="Results">
@@ -13,6 +14,18 @@ export default function Results(props) {
             </span>
           </p>
           <p>{props.results.phonetic}</p>
+          {props.results.phonetics.map(function (phonetic, index) {
+            if (phonetic.audio)
+              return (
+                <ReactAudioPlayer
+                  src={phonetic.audio}
+                  autoPlay={false}
+                  controls
+                  key={index}
+                />
+              );
+            else return null;
+          })}
         </div>
 
         {props.results.meanings.map(function (meaning, index) {
@@ -22,6 +35,7 @@ export default function Results(props) {
             </div>
           );
         })}
+
         <footer>
           <p>
             Coded by Maya Barbir, open-sourced on{" "}
@@ -48,11 +62,22 @@ export default function Results(props) {
     return null;
   }
 }
+
 /*  {props.results.phonetics.map(function (phonetic, index) {
             return <div key={index}>{phonetic}</div>;
           })}*/
 /* <ReactAudioPlayer
-            src={props.results.phonetics.audio}
+            src={phonetic.audio}
             autoPlay
             controls
+            key={index}
           />*/
+/*/*{props.results.phonetics.map(function (phonetic, index) {
+            if (phonetic.audio) return <ReactAudioPlayer
+            src={phonetic.audio}
+            autoPlay
+            controls
+            key={index}
+          /> ;
+            else return null
+          })}*/

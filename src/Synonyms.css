@@ -1,9 +1,12 @@
 .Synonyms {
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 16px;
 }
 .Synonyms li {
-  display: inline-block;
   color: #4adaa7;
   list-style: none;
 }

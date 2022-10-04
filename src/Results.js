@@ -8,7 +8,7 @@ export default function Results(props) {
       <div className="Results">
         <div className="section-1">
           <p>
-            <span className="label">
+            <span className="label top-word">
               <strong>{props.results.word}</strong>
             </span>
           </p>

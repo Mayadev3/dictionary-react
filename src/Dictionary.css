@@ -1,5 +1,5 @@
 .Dictionary h1 {
-  font-size: 63px;
+  font-size: 64px;
   margin-top: 60px;
   margin-left: -40px;
   font-family: "Roboto Slab", serif;
@@ -49,4 +49,7 @@
   font-size: 16px;
   position: relative;
   left: -33px;
+}
+.top-word {
+  font-size: 25px;
 }

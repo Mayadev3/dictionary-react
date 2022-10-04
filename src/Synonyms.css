@@ -1,7 +1,9 @@
-ul {
-  list-style: none;
+.Synonyms {
+  margin: 0;
+  padding: 0;
 }
-
-li.synonymss {
+.Synonyms li {
+  display: inline-block;
   color: #4adaa7;
+  list-style: none;
 }

@@ -26,7 +26,6 @@ body {
 }
 .moonman {
   position: relative;
-
   top: -20px;
   transform: rotate(-10deg);
 }
@@ -34,7 +33,6 @@ body {
   color: #9061f9;
   font-family: "Times New Roman", Times, serif;
   font-size: 20px;
-  text-transform: capitalize;
   position: relative;
 }
 

@@ -5,10 +5,13 @@
 }
 body {
   background-color: #f8b4d9;
+  overflow-x: hidden;
 }
 
 .App {
   text-align: center;
+  width: 70%;
+  margin: 50px auto 0 auto;
 }
 .hiker-image,
 .moonman {
@@ -19,13 +22,15 @@ body {
   display: flex;
   justify-content: center;
   gap: 7px;
-  margin-top: 37px;
 }
-
+.hiker-image {
+  position: relative;
+}
 .moonman {
   position: relative;
   top: -20px;
   transform: rotate(-10deg);
+  right: 26px;
 }
 
 .label {
@@ -40,27 +45,25 @@ body {
 .section-3 {
   color: rgba(255, 0, 255);
   text-align: left;
-  width: 700px;
   font-size: 17px;
   padding: 20px 60px;
   border-radius: 10px;
   position: relative;
-  left: -20px;
-
+  width: 700px;
   background: rgba(242, 233, 233, 0.6);
   border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(255, 0, 255, 0.4);
+  box-shadow: 0 4px 30px rgba(231, 8, 231, 0.4);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(242, 233, 233, 0.3);
 }
 .section-1 {
-  margin-top: 65px;
+  margin: 80px auto 0 auto;
 }
 .section-2 {
   margin: 20px auto;
 }
 .section-3 {
-  padding-left: 45px;
+  padding-left: 48px;
   margin: 0 0 30px auto;
 }

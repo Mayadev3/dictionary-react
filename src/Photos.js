@@ -9,11 +9,11 @@ export default function Photos(props) {
         <div className="row section-3">
           {props.photos.map(function (photo, index) {
             return (
-              <div className="col-4 img-container" key={index}>
+              <div className=" col-4 img-container" key={index}>
                 <a href={photo.src.original} target="_blank" rel="noreferrer">
                   <img
                     src={photo.src.tiny}
-                    className="img-fluid pexelImage"
+                    className=" pexelImage img-fluid"
                     rel="noreferrer"
                     alt={photo.alt}
                   />

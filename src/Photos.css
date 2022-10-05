@@ -1,15 +1,19 @@
 .Photos {
-  padding: 0;
+  padding: 30px 130px;
   margin: 0;
 }
 .Photos img {
-  border-radius: 5px;
   margin: 10px;
+  border-radius: 5px;
   transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
   filter: grayscale(100%);
 }
 
 .Photos img:hover {
-  transform: scale(1.03) rotate(10deg);
+  transform: scale(1.03) rotate(8deg);
   filter: grayscale(0%);
+}
+.img-container {
+  display: flex;
+  flex-wrap: wrap;
 }

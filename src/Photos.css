@@ -10,7 +10,7 @@
 }
 
 .Photos img:hover {
-  transform: scale(1.03) rotate(8deg);
+  transform: scale(1.03) rotate(10deg);
   filter: grayscale(0%);
 }
 .img-container {

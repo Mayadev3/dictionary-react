@@ -22,8 +22,3 @@ export default function Meaning(props) {
     </div>
   );
 }
-{
-  /*if i want to loop through all the definitions: {props.meaning.definitions.map(function (definition, index) {
-          return <div key={index}>{definition.definition}</div>;
-        })}*/
-}

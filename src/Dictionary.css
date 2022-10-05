@@ -53,17 +53,3 @@
 .top-word {
   font-size: 25px;
 }
-footer {
-  display: flex;
-  justify-content: center;
-  color: #5521b5;
-}
-a {
-  text-decoration: none;
-
-  color: rgba(255, 0, 255);
-  text-shadow: 1px 1px 3px white;
-}
-a:hover {
-  color: rgb(255, 160, 77);
-}

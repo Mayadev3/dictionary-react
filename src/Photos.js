@@ -1,5 +1,6 @@
 import React from "react";
 import "./Photos.css";
+import Footer from "./Footer.js";
 export default function Photos(props) {
   console.log(props.photos);
   if (props.photos) {
@@ -20,6 +21,7 @@ export default function Photos(props) {
             );
           })}
         </div>
+        <Footer />
       </div>
     );
   } else {

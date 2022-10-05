@@ -1,7 +1,6 @@
 .Photos {
   padding: 0;
   margin: 0;
-  display: flex;
 }
 .Photos img {
   border-radius: 5px;
@@ -10,5 +9,6 @@
 }
 
 .Photos img:hover {
-  transform: scale(1.03);
+  transform: scale(1.03) rotate(10deg);
+  filter: opacity(100%);
 }

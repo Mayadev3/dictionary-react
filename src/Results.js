@@ -35,8 +35,7 @@ export default function Results(props) {
             </div>
           );
         })}
-
-        <footer>
+        {/*<footer>
           <p>
             Coded by Maya Barbir, open-sourced on{" "}
             <a
@@ -56,28 +55,10 @@ export default function Results(props) {
             </a>
           </p>
         </footer>
+      */}
       </div>
     );
   } else {
     return null;
   }
 }
-
-/*  {props.results.phonetics.map(function (phonetic, index) {
-            return <div key={index}>{phonetic}</div>;
-          })}*/
-/* <ReactAudioPlayer
-            src={phonetic.audio}
-            autoPlay
-            controls
-            key={index}
-          />*/
-/*/*{props.results.phonetics.map(function (phonetic, index) {
-            if (phonetic.audio) return <ReactAudioPlayer
-            src={phonetic.audio}
-            autoPlay
-            controls
-            key={index}
-          /> ;
-            else return null
-          })}*/

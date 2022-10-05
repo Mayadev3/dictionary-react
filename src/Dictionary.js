@@ -8,7 +8,7 @@ export default function Dictionary() {
   let [results, setResults] = useState(null);
   let [photo, setPhoto] = useState(null);
 
-  function handleResponse(response) {
+  function handleDictionaryResponse(response) {
     setResults(response.data[0]);
   }
   function handlePexelsResponse(response) {
@@ -20,11 +20,11 @@ export default function Dictionary() {
     //dictionary API source: https://dictionaryapi.dev/
     event.preventDefault();
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyWord}`;
-    axios.get(apiUrl).then(handleResponse);
+    axios.get(apiUrl).then(handleDictionaryResponse);
     //image API from pexels
     const PexelsApiKey =
       "563492ad6f9170000100000115213de1d39644c7b4185545f07c18f8";
-    const PexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyWord}&per_page=1`;
+    const PexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyWord}&per_page=9`;
     axios
       .get(PexelsApiUrl, {
         headers: { Authorization: `Bearer ${PexelsApiKey}` },
@@ -50,7 +50,9 @@ export default function Dictionary() {
         </form>
       </div>
       <Results results={results} />
-      <Photos images={photo} />
+      <div className="section-3">
+        <Photos photos={photo} />
+      </div>
     </div>
   );
 }

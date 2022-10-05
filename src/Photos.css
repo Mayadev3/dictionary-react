@@ -5,9 +5,11 @@
 .Photos img {
   border-radius: 5px;
   margin: 10px;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+  filter: grayscale(100%);
 }
 
 .Photos img:hover {
   transform: scale(1.03) rotate(10deg);
+  filter: grayscale(0%);
 }

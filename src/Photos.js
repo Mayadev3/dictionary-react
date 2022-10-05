@@ -15,7 +15,7 @@ export default function Photos(props) {
                     src={photo.src.tiny}
                     className="img-fluid pexelImage"
                     rel="noreferrer"
-                    alt="action-or-noun"
+                    alt={photo.alt}
                   />
                 </a>
               </div>

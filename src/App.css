@@ -42,7 +42,6 @@ body {
   color: rgba(255, 0, 255);
   text-align: left;
   width: 700px;
-  margin: 65px auto;
   font-size: 17px;
   padding: 20px 60px;
   border-radius: 10px;
@@ -52,4 +51,13 @@ body {
   box-shadow: 4px 4px 20px rgba(255, 0, 255, 0.4);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
+}
+.section-1 {
+  margin-top: 65px;
+}
+.section-2 {
+  margin: 20px auto;
+}
+.section-3 {
+  margin: 0 0 40px 0;
 }

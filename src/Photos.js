@@ -4,8 +4,8 @@ export default function Photos(props) {
   console.log(props.photos);
   if (props.photos) {
     return (
-      <div className="Photos">
-        <div className="row">
+      <div className="Photos ">
+        <div className="row section-3">
           {props.photos.map(function (photo, index) {
             return (
               <div className="col-4 img-container" key={index}>

@@ -14,7 +14,7 @@ export default function Meaning(props) {
         </p>
 
         <p>{props.meaning.definitions[0].definition}</p>
-        {/*{props.meaning.definitions.map(function (definition, index){
+        {/*What is wrong with my loop? {props.meaning.definitions.map(function (definition, index){
   return(
 <div key={index}>
 {definition}

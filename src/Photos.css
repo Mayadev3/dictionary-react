@@ -10,5 +10,4 @@
 
 .Photos img:hover {
   transform: scale(1.03) rotate(10deg);
-  filter: opacity(100%);
 }

@@ -12,15 +12,8 @@ export default function Meaning(props) {
             <strong>{props.meaning.partOfSpeech}</strong>
           </span>
         </p>
-
         <p>{props.meaning.definitions[0].definition}</p>
-        {/*What is wrong with my loop? {props.meaning.definitions.map(function (definition, index){
-  return(
-<div key={index}>
-{definition}
-</div>
-  );
-})}*/}
+
         <p className="example">
           <em>{props.meaning.definitions[0].example}</em>
         </p>
@@ -28,4 +21,9 @@ export default function Meaning(props) {
       </div>
     </div>
   );
+}
+{
+  /*if i want to loop through all the definitions: {props.meaning.definitions.map(function (definition, index) {
+          return <div key={index}>{definition.definition}</div>;
+        })}*/
 }

@@ -19,19 +19,18 @@ body {
   display: flex;
   justify-content: center;
   gap: 7px;
-  margin-top: 50px;
+  margin-top: 37px;
 }
-.hiker-image-container {
-  position: relative;
-}
+
 .moonman {
   position: relative;
   top: -20px;
   transform: rotate(-10deg);
 }
+
 .label {
   color: #9061f9;
-  font-family: "Times New Roman", Times, serif;
+  font-family: Helvetica, Arial, sans-serif;
   font-size: 20px;
   position: relative;
 }
@@ -47,10 +46,18 @@ body {
   border-radius: 10px;
   position: relative;
   left: -20px;
-  background: rgba(255, 255, 255, 0.3);
-  box-shadow: 4px 4px 20px rgba(255, 0, 255, 0.4);
+
+  background: rgba(242, 233, 233, 0.6);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(255, 0, 255, 0.4);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(242, 233, 233, 0.3);
+
+  /*box-shadow: 4px 4px 20px rgba(255, 0, 255, 0.4);
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);*/
 }
 .section-1 {
   margin-top: 65px;

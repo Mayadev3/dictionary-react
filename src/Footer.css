@@ -2,10 +2,10 @@ footer {
   display: flex;
   justify-content: center;
   color: #5521b5;
+  margin-top: 20px;
 }
 a {
   text-decoration: none;
-
   color: rgba(255, 0, 255);
   text-shadow: 1px 1px 3px white;
 }

@@ -25,12 +25,13 @@ body {
 }
 .hiker-image {
   position: relative;
+  left: 80px;
 }
 .moonman {
   position: relative;
   top: -20px;
   transform: rotate(-10deg);
-  right: 26px;
+  right: 100px;
 }
 
 .label {
@@ -64,6 +65,8 @@ body {
   margin: 20px auto;
 }
 .section-3 {
-  padding-left: 48px;
-  margin: 0 0 30px auto;
+  margin-left: -13px;
+}
+.Dictionary {
+  min-width: 700px;
 }

@@ -1,6 +1,5 @@
 .Photos {
-  padding: 30px 130px;
-  margin: 0;
+  margin-left: 13px;
 }
 .Photos img {
   margin: 10px;
@@ -12,8 +11,4 @@
 .Photos img:hover {
   transform: scale(1.03) rotate(10deg);
   filter: grayscale(0%);
-}
-.img-container {
-  display: flex;
-  flex-wrap: wrap;
 }

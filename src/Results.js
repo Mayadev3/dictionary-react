@@ -1,6 +1,7 @@
 import React from "react";
 import Meaning from "./Meaning.js";
 import ReactAudioPlayer from "react-audio-player";
+import "./Results.css";
 export default function Results(props) {
   console.log(props.results);
 

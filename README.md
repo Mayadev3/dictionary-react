@@ -7,6 +7,7 @@ Coding Achievements:
  - built a search bar and targetted the input value
  - created multiple components and their corresponding style sheets
  - used Axios to get the data from the dictionary API and the free image and video API (pexels.com)
+ - looped through the synonyms and the images using the map method()
  - utilized states and properties to inject the DOM with data from the API
 
 Demo Link: https://transcendent-shortbread-f10f7b.netlify.app/

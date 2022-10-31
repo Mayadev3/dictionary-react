@@ -9,6 +9,7 @@ Coding Achievements:
  - used Axios to get the data from the dictionary API and the free image and video API (pexels.com)
  - looped through the synonyms and the images using the map method()
  - utilized states and properties to inject the DOM with data from the API
+ - imported ReactAudioPlayer to listen to the pronunciation of the word submitted
 
 Demo Link: https://transcendent-shortbread-f10f7b.netlify.app/
 

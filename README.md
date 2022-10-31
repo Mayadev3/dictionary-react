@@ -1,3 +1,19 @@
+Dictionary React App
+
+As a former kindergarten teacher and  English as a Foreign Language trainer, I was very excited to create a dictionary React application that is fun and eye-catching for users of all ages. Children, teens, and adults can use my dictionary application to look up any word they need. When a user submits a word, the first feature displayed is the phonetics and the audio of how the word could be pronounced. Multiple parts of speech with examples are then followed by a collection of nine pictures that express the meaning of the word more vividly. When a user hovers over one of the images, it changes from black and white to a saturated colorful picture. By clicking on any of the images, a new tab will open up a colorful enlarged size of that image.
+
+Coding Achievements:
+
+ - built a search bar and targetted the input value
+ - created multiple components and their corresponding style sheets
+ - used Axios to get the data from the dictionary API and the free image and video API (pexels.com)
+ - utilized states and properties to inject the DOM with data from the API
+
+Demo Link: https://transcendent-shortbread-f10f7b.netlify.app/
+
+https://user-images.githubusercontent.com/107764065/199005847-e6a15b1f-cc34-4bf7-a87a-eb4c81dfac80.mp4
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

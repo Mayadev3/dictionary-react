@@ -1,4 +1,4 @@
-Dictionary React App
+Dictionary React App 👩🏻‍🎓
 
 As a former kindergarten teacher and  English as a Foreign Language trainer, I was very excited to create a dictionary React application that is fun and eye-catching for users of all ages. Children, teens, and adults can use my dictionary application to look up any word they need. When a user submits a word, the first feature displayed is the phonetics and the audio of how the word could be pronounced. Multiple parts of speech with examples are then followed by a collection of nine pictures that express the meaning of the word more vividly. When a user hovers over one of the images, it changes from black and white to a saturated colorful picture. By clicking on any of the images, a new tab will open up a colorful enlarged size of that image.
 
